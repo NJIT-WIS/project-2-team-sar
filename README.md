@@ -4,7 +4,7 @@ Please READ everything I am giving you and everyone needs to submit in Canvas.
 **Run:**
 - npm install
 - npm run build <- after first install
-- npm run dev --turbo <-Startup Live Dev Server for lIve preview on http://locahhost:30000
+- npm run dev --turbo <-Startup Live Dev Server for lIve preview on http://locahhost:3000
 
 ## Lecture Videos
 - [Project 2 Intro and Project 1 Debrief  Part 1](https://youtu.be/TaTOCifmREc)
