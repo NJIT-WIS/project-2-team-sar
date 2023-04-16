@@ -7,13 +7,13 @@ const MyCard2 = () => {
       <Row>
         <Col md={6}>
           <div className="my-3">
-            <h3>Example Card</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ante sit amet eros faucibus, vel euismod tortor varius. Integer id lectus vel felis sodales sollicitudin. Fusce faucibus urna ac velit interdum, non mattis arcu elementum.</p>
-            <p>Donec a luctus augue. Mauris id nisl vel ipsum ultricies bibendum eu quis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur et ante vitae magna eleifend hendrerit at id sem.</p>
+            <h3>Artificial Intelligence: The Future is Here</h3>
+            <p>Artificial intelligence (AI) is a field of computer science that focuses on the development of intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.</p>
+            <p>AI is a rapidly growing field that has the potential to revolutionize many industries and change the way we live and work.</p>
           </div>
         </Col>
         <Col md={6}>
-          <img src="https://picsum.photos/400" alt="Example" className="img-fluid rounded" />
+          <img src="https://observatory.tec.mx/wp-content/uploads/2020/08/ArtificialIntelligenceinEducation.jpg" alt="AI Robot" className="img-fluid rounded" />
         </Col>
       </Row>
     </Container>

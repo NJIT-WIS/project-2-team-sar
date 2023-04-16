@@ -6,13 +6,13 @@ const MyCard3 = () => {
     <Container className="my-5">
       <Row>
         <Col md={6}>
-          <img src="https://picsum.photos/600" alt="Example" className="img-fluid rounded" />
+          <img src="https://iscanner.com/wp-content/uploads/2022/08/Blog_Post_ai_in_education_main_pic.png" alt="Puzzle" className="img-fluid rounded" />
         </Col>
         <Col md={6}>
           <div className="my-3">
-            <h3>Example Card</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ante sit amet eros faucibus, vel euismod tortor varius. Integer id lectus vel felis sodales sollicitudin. Fusce faucibus urna ac velit interdum, non mattis arcu elementum.</p>
-            <p>Donec a luctus augue. Mauris id nisl vel ipsum ultricies bibendum eu quis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur et ante vitae magna eleifend hendrerit at id sem.</p>
+            <h3>The Future of Artificial Intelligence</h3>
+            <p>Artificial intelligence (AI) is rapidly advancing and has the potential to revolutionize many industries and change the way we live and work. In the future, AI will be used to automate many tasks that are currently performed by humans, such as driving cars, diagnosing diseases, and even performing surgery.</p>
+            <p> AI will also be used to create new products and services that we can’t even imagine yet. However, there are also concerns about the impact of AI on jobs and society as a whole. As AI continues to evolve, it’s important that we consider the ethical implications and work together to ensure that it benefits everyone.</p>
           </div>
         </Col>
       </Row>
