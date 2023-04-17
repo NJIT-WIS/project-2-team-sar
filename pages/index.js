@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import MyCard1 from '../components/Card_1';
-import MyCard2 from '../components/Card_2';
-import MyCard3 from '../components/Card_3';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import MyCard1 from '../components/card_1';
+import MyCard2 from '../components/card_2';
+import MyCard3 from '../components/card_3';
 
 export default function Home() {
   return (
