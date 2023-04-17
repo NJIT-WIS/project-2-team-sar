@@ -12,11 +12,11 @@ export default function Home() {
         <title>SAR Marketing Group</title>
         <meta name="description" content="Marketing group site created by  three college students." />
       </Head>
-      <Header />
-      <MyCard1 />
-      <MyCard2 />
-      <MyCard3 />
-      <Footer />
+      <Header/>
+      <Card_1/>
+      <Card_2/>
+      <Card_3/>
+      <Footer/>
     </>
   )
 }
