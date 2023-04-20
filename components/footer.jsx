@@ -2,20 +2,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-
+import Link from 'next/Link';
 
 const Footer = () => {
   return (
     <footer className="bg-light">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={4}>
+            <Link href="/aboutus">About Us</Link>
+            <Link href="/policy">Privacy Policy</Link>
+          </Col>
+          <Col md={4}>
             <h5>Connect with us:</h5>
             <a href="https://www.facebook.com"><i className="fab fa-facebook fa-2x"></i></a>
             <a href="https://www.twitter.com"><i className="fab fa-twitter fa-2x"></i></a>
             <a href="https://www.instagram.com"><i className="fab fa-instagram fa-2x"></i></a>
           </Col>
-          <Col md={6}>
+          <Col md={4}>
             <h5>Contact us:</h5>
             <p>123 Main Street, New York, NY 10001</p>
             <p>Email: info@example.com</p>
