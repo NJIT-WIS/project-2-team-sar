@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from 'next/Link';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import Link from 'next/Link';
 
 
 
