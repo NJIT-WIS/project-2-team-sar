@@ -2,7 +2,7 @@ name: Daily Backup
 
 on:
   schedule:
-    - cron: '/5 * * * *' # Runs at 12:00am UTC every day
+    - cron: '*/5 * * * *' # Runs at 12:00am UTC every day
 
 jobs:
   backup:
