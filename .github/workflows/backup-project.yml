@@ -19,6 +19,7 @@ jobs:
 
       - name: fetch and rebase
         run: |
+          git branch
           git fetch origin Sprint2
           git merge origin/Sprint2
 
