@@ -2,7 +2,7 @@ name: Daily Backup
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Runs at 12:00am UTC every day
+    - cron: '0 */12 * * *' # Backup every 12 hours
 
 jobs:
   backup:
@@ -10,11 +10,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Backup repository
+      - name: Check if backup branch exists
         run: |
-          git config --global user.name "ap2684"
-          git config --global user.email "ap2684@njit.edu"
-          pwd
-          git config --list
-          git remote add project-2-team-sar https://github.com/ap2684/backup-project-2-team-sar.git
-          git push --mirror backup
+          if git rev-parse --verify backup >/dev/null 2>&1
+          then
+            echo "Backup branch already exists"
+          else
+            echo "Creating backup branch"
+            git branch backup
+            git checkout backup
+          fi
+      - name: Push backup branch to remote
+        run: |
+          git push origin backup
