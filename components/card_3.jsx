@@ -6,7 +6,7 @@ const MyCard3 = () => {
     <Container className="my-5">
       <Row>
         <Col md={6}>
-          <img src="https://iscanner.com/wp-content/uploads/2022/08/Blog_Post_ai_in_education_main_pic.png" alt="Puzzle" className="img-fluid rounded" />
+          <img src="https://iscanner.com/wp-content/uploads/2022/08/Blog_Post_ai_in_education_main_pic.png" alt="Puzzle" className="img-fluid rounded" style={{maxHeight: "500px"}} />
         </Col>
         <Col md={6}>
           <div className="my-3">
