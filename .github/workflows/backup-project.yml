@@ -21,7 +21,7 @@ jobs:
         run: |
           git branch
           git fetch origin Sprint2
-          git merge origin/Sprint2
+          git merge -X theirs origin/Sprint2 --allow-unrelated-histories
 
       - name: push backup
         run: git push origin backup --force-with-lease
