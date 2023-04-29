@@ -12,7 +12,7 @@ jobs:
           ref: Sprint2
 
       - name: checkout backup
-        run: git checkout backup
+        run: git checkout origin/backup
 
       - name: fetch and rebase
         run: |
