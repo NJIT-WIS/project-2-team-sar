@@ -27,5 +27,7 @@ jobs:
           git merge origin/Sprint2
       - name: Push backup branch to remote
         run: |
-          git pull origin backup --ff-only
+          git fetch origin Sprint2
+          git merge origin/backup
+          git rebase origin/backup
           git push origin backup
