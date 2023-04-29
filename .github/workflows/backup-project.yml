@@ -29,12 +29,11 @@ jobs:
 
     - name: Create backup branch from Sprint
       run: |
-        if git show-ref --verify --quiet "refs/heads/backup/Sprint2"; then
+        if git rev-parse --verify backup >/dev/null 2>&1 then
           echo "Backup branch already exists, skipping."
         else
           git checkout -b backup/Sprint2
         fi
-
 
     - name: Merge changes from Sprint
       run: git merge --no-commit Sprint2
