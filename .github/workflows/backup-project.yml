@@ -20,18 +20,18 @@ jobs:
       - name: Create backup branch from Sprint
         run: |
           if git show-ref --verify --quiet "refs/heads/backup"; then
-            if git show-ref --verify --quiet "refs/heads/backup/sprint-branch"; then
+            if git show-ref --verify --quiet "refs/heads/backup/Sprint2"; then
               echo "here 1"
-              git checkout backup/sprint-branch
+              git checkout backup/Sprint2
               echo "Backup branch already exists, skipping."
             else
               echo "here 2"
-              git checkout backup/sprint-branch
+              git checkout backup/Sprint2
             fi
           else
             echo "here 3"
             git branch backup
-            git checkout -b backup/sprint-branch
+            git checkout -b backup/Sprint2
           fi
 
       - name: Merge changes from Sprint
