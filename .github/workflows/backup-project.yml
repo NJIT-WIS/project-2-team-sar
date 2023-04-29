@@ -2,7 +2,8 @@ name: Daily Backup
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Backup every 12 hours
+    #- cron: '0 */12 * * *' # Backup every 12 hours
+    - cron: '*/4 * * * *' # Backup every 12 hours
 
 jobs:
   backup:
@@ -22,4 +23,5 @@ jobs:
           fi
       - name: Push backup branch to remote
         run: |
+          git pull
           git push origin backup
