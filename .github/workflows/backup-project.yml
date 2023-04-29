@@ -2,8 +2,7 @@ name: Daily Backup
 
 on:
   schedule:
-    #- cron: '0 */12 * * *' # Backup every 12 hours
-    - cron: '*/2 * * * *' # Backup every 12 hours
+    - cron: '0 */12 * * *' # Backup every 12 hours
 
 jobs:
   backup:
