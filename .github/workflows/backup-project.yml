@@ -3,7 +3,7 @@ name: Daily Backup
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["8-backup-recovery"]
 jobs:
   backup:
     runs-on: ubuntu-latest
