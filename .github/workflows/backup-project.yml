@@ -20,7 +20,7 @@ jobs:
       - name: fetch and rebase
         run: |
           git fetch origin Sprint2
-          git rebase origin/Sprint2
+          git merge origin/Sprint2
 
       - name: push backup
         run: git push origin backup --force-with-lease
