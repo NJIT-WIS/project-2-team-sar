@@ -23,9 +23,9 @@ jobs:
           fi
       - name: Pull changes from Sprint2 branch
         run: |
-          git pull origin backup
           git fetch origin Sprint2
           git merge origin/Sprint2
       - name: Push backup branch to remote
         run: |
+          git pull origin backup --ff-only
           git push origin backup
