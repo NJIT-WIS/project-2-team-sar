@@ -9,36 +9,23 @@ jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Sprint branch
-      uses: actions/checkout@v2
-      with:
-        ref: Sprint2
-    
-    - name: Create backup branch
-      #run: git branch backup || git checkout -b backup
-      run: |
-          if git rev-parse --verify backup >/dev/null 2>&1
-          then
-            echo "Backup branch already exists"
-          else
-            echo "Creating backup branch"
-            git branch backup
-          fi
-    
-    - name: Pull latest changes
-      run: git pull origin Sprint2
-      
-    - name: Create backup branch from Sprint
-      run: git checkout -b backup/Sprint2
-    
-    - name: Merge changes from Sprint
-      run: git merge --no-commit Sprint2
-      
-    - name: Resolve conflicts
-      run: git mergetool
-      
-    - name: Commit backup changes
-      run: git commit -m "Backup of Sprint branch"
-      
-    - name: Push backup branch
-      run: git push origin backup/Sprint2
+      - name: Checkout Sprint2 branch
+        uses: actions/checkout@v2
+        with:
+          ref: Sprint2
+
+      - name: checkout backup branch
+        run: |
+          git fetch origin
+          git branch -r
+          git checkout -b backup origin/backup
+
+      - name: fetch and merge Sprint2 branch to backup branch
+        run: |
+          git config --global user.email "ap2684@njit.edu"
+          git config --global user.name "ap2684"
+          git fetch origin Sprint2
+          git merge -X theirs origin/Sprint2 --allow-unrelated-histories
+
+      - name: push backup
+        run: git push origin backup --force-with-lease
