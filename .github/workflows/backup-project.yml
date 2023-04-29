@@ -23,5 +23,5 @@ jobs:
           fi
       - name: Push backup branch to remote
         run: |
-          git pull
+          git pull origin Sprint2
           git push origin backup
