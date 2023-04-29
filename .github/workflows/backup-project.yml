@@ -20,7 +20,13 @@ jobs:
         run: git pull origin Sprint2
 
       - name: Create backup branch from Sprint
-        run: git checkout -b backup/Sprint2
+        run: |
+          if git show-ref --verify --quiet "refs/heads/backup/sprint-branch"; then
+            git checkout backup/sprint-branch
+            echo "Backup branch already exists, skipping."
+          else
+            git checkout -b backup/sprint-branch
+          fi
 
       - name: Merge changes from Sprint
         run: git merge --no-commit Sprint2
