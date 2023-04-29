@@ -1,10 +1,8 @@
 name: Daily Backup
 
 on:
-#  schedule:
-#    - cron: '*/5 * * * *'
-  push:
-    branches: ["8-backup-recovery"]
+  schedule:
+    - cron: '0 */12 * * *' # Backup every 12 hours
 
 jobs:
   backup:
