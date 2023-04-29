@@ -1,9 +1,7 @@
-name: Daily Backup
-
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["8-backup-recovery"]
+
 jobs:
   backup:
     runs-on: ubuntu-latest
@@ -14,7 +12,12 @@ jobs:
           ref: Sprint2
 
       - name: Create backup branch
-        run: git branch backup || git checkout -b backup
+        run: |
+          if git show-ref --verify --quiet "refs/heads/backup"; then
+            echo "Backup branch already exists, skipping."
+          else
+            git checkout -b backup
+          fi
 
       - name: Pull latest changes
         run: git pull origin Sprint2
@@ -25,7 +28,7 @@ jobs:
             git checkout backup/sprint-branch
             echo "Backup branch already exists, skipping."
           else
-            git checkout -b backup/sprint-branch
+            git checkout -b backup/sprint-branch Sprint2
           fi
 
       - name: Merge changes from Sprint
