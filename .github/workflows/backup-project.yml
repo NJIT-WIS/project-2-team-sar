@@ -3,13 +3,13 @@ name: Daily Backup
 on:
   schedule:
     #- cron: '0 */12 * * *' # Backup every 12 hours
-    - cron: '*/3 * * * *' # Backup every 12 hours
+    - cron: '*/2 * * * *' # Backup every 12 hours
 
 jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout Sprint branch
+    - name: Checkout Sprint branch
       uses: actions/checkout@v2
       with:
         ref: Sprint2
