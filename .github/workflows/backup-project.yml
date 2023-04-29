@@ -17,4 +17,5 @@ jobs:
           git config --global user.name "ap2684"
           git config --global user.email "ap2684@njit.edu"
           git remote add project-2-team-sar https://github.com/ap2684/backup-project-2-team-sar.git
+          cd backup-project-2-team-sar
           git push --mirror https://github.com/ap2684/backup-project-2-team-sar.git
