@@ -21,7 +21,10 @@ jobs:
             git branch backup
             git checkout backup
           fi
+      - name: Pull changes from Sprint2 branch
+        run: |
+          git fetch origin Sprint2
+          git merge origin/Sprint2
       - name: Push backup branch to remote
         run: |
-          git pull origin Sprint2
           git push origin backup
