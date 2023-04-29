@@ -10,10 +10,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Backup repository
-        run: |
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Check if backup branch exists
         run: |
           if git rev-parse --verify backup >/dev/null 2>&1
