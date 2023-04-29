@@ -19,6 +19,8 @@ jobs:
 
       - name: fetch and rebase
         run: |
+          git config --global user.email "ap2684@njit.edu"
+          git config --global user.name "ap2684"
           git branch
           git fetch origin Sprint2
           git merge -X theirs origin/Sprint2 --allow-unrelated-histories
