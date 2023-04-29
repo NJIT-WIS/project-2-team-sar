@@ -9,10 +9,10 @@ jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Sprint branch
+        - name: Checkout Sprint branch
       uses: actions/checkout@v2
       with:
-        ref: 20-google-translate
+        ref: Sprint2
     
     - name: Create backup branch
       #run: git branch backup || git checkout -b backup
@@ -26,13 +26,13 @@ jobs:
           fi
     
     - name: Pull latest changes
-      run: git pull origin 20-google-translate
+      run: git pull origin Sprint2
       
     - name: Create backup branch from Sprint
-      run: git checkout -b backup/20-google-translate
+      run: git checkout -b backup/Sprint2
     
     - name: Merge changes from Sprint
-      run: git merge --no-commit 20-google-translate
+      run: git merge --no-commit Sprint2
       
     - name: Resolve conflicts
       run: git mergetool
@@ -41,4 +41,4 @@ jobs:
       run: git commit -m "Backup of Sprint branch"
       
     - name: Push backup branch
-      run: git push origin backup/20-google-translate
+      run: git push origin backup/Sprint2
