@@ -15,7 +15,7 @@ jobs:
           git config --global user.name "ap2684"
           git config --global user.email "ap2684@njit.edu"
           pwd
-          git clone https://github.com/NJIT-WIS/project-2-team-sar.git backup
-          cd backup
+          git config --list
+          git clone https://github.com/NJIT-WIS/project-2-team-sar.git
           git remote add backup https://github.com/ap2684/backup-project-2-team-sar.git
           git push --mirror backup
