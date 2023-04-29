@@ -1,27 +1,43 @@
 name: Daily Backup
 
 on:
-  schedule:
-    #- cron: '0 */12 * * *' # Backup every 12 hours
-    - cron: '*/4 * * * *' # Backup every 12 hours
-
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
 jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Check if backup branch exists
-        run: |
+    - name: Checkout Sprint branch
+      uses: actions/checkout@v2
+      with:
+        ref: Sprint2
+
+    - name: Create backup branch
+      #run: git branch backup || git checkout -b backup
+      run: |
           if git rev-parse --verify backup >/dev/null 2>&1
           then
             echo "Backup branch already exists"
           else
             echo "Creating backup branch"
             git branch backup
-            git checkout backup
           fi
-      - name: Push backup branch to remote
-        run: |
-          git pull origin Sprint2
-          git push origin backup
+
+    - name: Pull latest changes
+      run: git pull origin Sprint2
+
+    - name: Create backup branch from Sprint
+      run: git checkout -b backup/Sprint2
+
+    - name: Merge changes from Sprint
+      run: git merge --no-commit Sprint2
+
+    - name: Resolve conflicts
+      run: git mergetool
+
+    - name: Commit backup changes
+      run: git commit -m "Backup of Sprint branch"
+
+    - name: Push backup branch
+      run: git push origin backup/Sprint2
