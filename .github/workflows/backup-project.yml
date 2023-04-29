@@ -17,7 +17,7 @@ jobs:
           git branch -r
           git checkout -b backup origin/backup
 
-      - name: fetch and rebase
+      - name: fetch and merge Sprint2 branch to backup branch
         run: |
           git config --global user.email "ap2684@njit.edu"
           git config --global user.name "ap2684"
