@@ -11,40 +11,13 @@ jobs:
         with:
           ref: Sprint2
 
-      - name: Create backup branch
-        run: git branch backup || git checkout -b backup
+      - name: checkout backup
+        run: git checkout backup
 
-      - name: Pull latest changes
-        run: git pull origin Sprint2
-
-      - name: Create backup branch from Sprint
+      - name: fetch and rebase
         run: |
-          if git show-ref --verify --quiet "refs/heads/backup"; then
-            if git show-ref --verify --quiet "refs/heads/backup/Sprint2"; then
-              echo "here 1"
-              git checkout backup/Sprint2
-              echo "Backup branch already exists, skipping."
-            else
-              echo "here 2"
-              git checkout backup
-            fi
-          else
-            echo "here 3"
-            git branch backup
-            git checkout -b backup/Sprint2
-          fi
+          git fetch origin Sprint2
+          git rebase origin/Sprint2
 
-      - name: Merge changes from Sprint
-        run: git merge --no-commit Sprint2
-
-      - name: Resolve conflicts
-        run: git mergetool
-
-      - name: Commit backup changes
-        run: |
-          git config --global user.email "ap2684@njit.edu"
-          git config --global user.name "ap2684"
-          git commit -m "Backup of Sprint branch"
-
-      - name: Push backup branch
-        run: git push origin backup/Sprint2
+      - name: push backup
+        run: git push origin backup --force-with-lease
