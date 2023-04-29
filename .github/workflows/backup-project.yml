@@ -16,8 +16,8 @@ jobs:
         run: |
           git config --global user.name "ap2684"
           git config --global user.email "ap2684@njit.edu"
-          git clone --mirror https://github.com/ap2684/backup-project-2-team-sar.git backup
-          cd backup
+          git clone --mirror https://github.com/NJIT-WIS/project-2-team-sar.git
+          cd project-2-team-sar
           git remote add backup-repo https://github.com/ap2684/backup-project-2-team-sar.git
           cd backup-project-2-team-sar
           git push --mirror https://github.com/ap2684/backup-project-2-team-sar.git
