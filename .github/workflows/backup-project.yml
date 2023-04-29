@@ -21,12 +21,15 @@ jobs:
         run: |
           if git show-ref --verify --quiet "refs/heads/backup"; then
             if git show-ref --verify --quiet "refs/heads/backup/sprint-branch"; then
+              echo "here 1"
               git checkout backup/sprint-branch
               echo "Backup branch already exists, skipping."
             else
+              echo "here 2"
               git checkout -b backup/sprint-branch
             fi
           else
+            echo "here 3"
             git branch backup
             git checkout -b backup/sprint-branch
           fi
