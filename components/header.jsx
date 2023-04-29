@@ -25,7 +25,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">MyWebClass.org</Navbar.Brand>
+        <Navbar.Brand href="https://njit-wis.github.io/project-2-team-sar/">MyWebClass.org</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
