@@ -26,7 +26,7 @@ jobs:
               echo "Backup branch already exists, skipping."
             else
               echo "here 2"
-              git checkout -b backup/sprint-branch
+              git checkout backup/sprint-branch
             fi
           else
             echo "here 3"
