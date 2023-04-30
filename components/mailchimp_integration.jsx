@@ -36,7 +36,7 @@ function EmailForm() {
         <Form.Label>Enter your email address to receive updates:</Form.Label>
         <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} required />
       </Form.Group>
-      <Button variant="primary" type="submit" onClick={handleSubmit}>Subscribe</Button>
+      <Button variant="primary" type="submit">Subscribe</Button>
     </Form>
   );
 }
