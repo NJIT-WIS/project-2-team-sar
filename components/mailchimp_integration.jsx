@@ -9,6 +9,7 @@ function EmailForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('Form submitted with email:', email);
     const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.REACT_APP_MAILCHIMP_LIST_ID}/members`, {
       method: 'POST',
       headers: {
