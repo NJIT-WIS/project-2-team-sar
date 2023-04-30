@@ -1,14 +1,12 @@
-require('dotenv').config();
-
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 function EmailForm() {
   const [email, setEmail] = useState('');
 
-    console.log('API key:', process.env.REACT_APP_MAILCHIMP_API_KEY);
-    console.log('List ID:', process.env.REACT_APP_MAILCHIMP_LIST_ID);
-  
+    console.log('API key:', process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY);
+    console.log('List ID:', process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.REACT_APP_MAILCHIMP_LIST_ID}/members`, {
