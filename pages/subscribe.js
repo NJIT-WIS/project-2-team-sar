@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Resources from '../components/resources'
-import EmailForm from '../components/EmailForm';
+import EmailForm from '../components/mailchimp_integration.jsx';
 
 function Subscribe() {
   return (
