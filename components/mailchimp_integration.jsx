@@ -4,20 +4,23 @@ import { Form, Button } from 'react-bootstrap';
 function EmailForm() {
   const [email, setEmail] = useState('');
 
-    console.log('API key:', process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY);
-    console.log('List ID:', process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID);
+  console.log('API key:', process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY);
+  console.log('List ID:', process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID);
 
-  const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Basic ${Buffer.from(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`).toString('base64')}`
-  },
-  body: JSON.stringify({
-    email_address: email,
-    status: 'subscribed'
-  })
-});
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log('Form submitted with email:', email);
+    const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Basic ${Buffer.from(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`).toString('base64')}`
+      },
+      body: JSON.stringify({
+        email_address: email,
+        status: 'subscribed'
+      })
+    });
 
     if (response.ok) {
       setEmail('');
