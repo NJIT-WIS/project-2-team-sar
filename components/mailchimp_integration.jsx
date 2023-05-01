@@ -11,25 +11,23 @@ function EmailForm() {
   e.preventDefault();
   console.log('handleSubmit called');
 
-  const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
+  const response = await fetch('/api/subscribe', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Basic ${btoa(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`)}`
     },
     body: JSON.stringify({
-      email_address: email,
-      status: 'subscribed'
-    })
+      email: email,
+    }),
   });
 
-  console.log('API response:', response);
+  const result = await response.json();
 
   if (response.ok) {
     setEmail('');
-    alert('Thanks for subscribing!');
+    alert(result.message);
   } else {
-    alert('Sorry, something went wrong. Please try again later.');
+    alert(result.message);
   }
 };
 
