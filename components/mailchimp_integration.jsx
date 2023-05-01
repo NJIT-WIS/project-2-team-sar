@@ -15,7 +15,7 @@ function EmailForm() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Basic ${Buffer.from(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`).toString('base64')}`
+      'Authorization': `Basic ${btoa(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`)}`
     },
     body: JSON.stringify({
       email_address: email,
