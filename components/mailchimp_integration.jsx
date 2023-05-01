@@ -8,27 +8,30 @@ function EmailForm() {
   console.log('List ID:', process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log('Form submitted with email:', email);
-    const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Basic ${Buffer.from(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`).toString('base64')}`
-      },
-      body: JSON.stringify({
-        email_address: email,
-        status: 'subscribed'
-      })
-    });
+  e.preventDefault();
+  console.log('handleSubmit called');
 
-    if (response.ok) {
-      setEmail('');
-      alert('Thanks for subscribing!');
-    } else {
-      alert('Sorry, something went wrong. Please try again later.');
-    }
-  };
+  const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Basic ${Buffer.from(`anystring:${process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY}`).toString('base64')}`
+    },
+    body: JSON.stringify({
+      email_address: email,
+      status: 'subscribed'
+    })
+  });
+
+  console.log('API response:', response);
+
+  if (response.ok) {
+    setEmail('');
+    alert('Thanks for subscribing!');
+  } else {
+    alert('Sorry, something went wrong. Please try again later.');
+  }
+};
 
   return (
     <Form onSubmit={handleSubmit}>
