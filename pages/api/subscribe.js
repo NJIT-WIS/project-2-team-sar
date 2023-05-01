@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const { email } = req.body;
 
     try {
-      const response = await fetch(`https://us6.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
+      const response = await fetch(`https://us21.api.mailchimp.com/3.0/lists/${process.env.NEXT_PUBLIC_MAILCHIMP_LIST_ID}/members`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
