@@ -1,6 +1,6 @@
 ---
 title: 'Overcoming Cognitive and Mental Health Challenges in Today's Classrooms'
-keyword: 'Cognitive'
+keyword: 'Overcome'
 ---
 
 # April 14, 2023: Overcoming Cognitive and Mental Health Challenges in Today's Classrooms
