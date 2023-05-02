@@ -1,3 +1,8 @@
+---
+title: 'Embracing the Agile Mindset in Education: A Paradigm Shift'
+keyword: 'agile'
+---
+
 # April 12, 2023: Embracing the Agile Mindset in Education: A Paradigm Shift
 
 ## Introduction
