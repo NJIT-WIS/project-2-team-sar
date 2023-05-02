@@ -1,3 +1,8 @@
+---
+title: 'Preparing Students for the AI-Driven World: Essential Skills for Success'
+keyword: 'Driven'
+---
+
 # February 22, 2023: Preparing Students for the AI-Driven World: Essential Skills for Success
 
 ## Introduction
