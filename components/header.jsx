@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
+import Link from 'next/link';
 
 function addGoogleTranslateScript() {
   const script = document.createElement('script');
@@ -17,10 +18,10 @@ function initializeGoogleTranslate() {
 }
 
 function Header() {
-    useEffect(() => {
-        addGoogleTranslateScript();
-        window.googleTranslateElementInit = initializeGoogleTranslate;
-      }, []);
+  useEffect(() => {
+    addGoogleTranslateScript();
+    window.googleTranslateElementInit = initializeGoogleTranslate;
+  }, []);
 
   return (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
@@ -29,11 +30,21 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#resources">Resources</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#blogs">Blogs</Nav.Link>
-            <Nav.Link href="#subscribe">Subscribe</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
+            <Link href="#resources" passHref>
+              <Nav.Link>Resources</Nav.Link>
+            </Link>
+            <Link href="#services" passHref>
+              <Nav.Link>Services</Nav.Link>
+            </Link>
+            <Link href="#blogs" passHref>
+              <Nav.Link>Blogs</Nav.Link>
+            </Link>
+            <Link href="#subscribe" passHref>
+              <Nav.Link>Subscribe</Nav.Link>
+            </Link>
+            <Link href="#about" passHref>
+              <Nav.Link>About</Nav.Link>
+            </Link>
             <Nav.Link style={{ marginLeft: "30px" }}>
               <div id="google-translate"></div>
             </Nav.Link>
@@ -41,6 +52,6 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    );
+  );
 }
 export default Header;
