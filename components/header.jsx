@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import 'bootstrap/dist/css/bootstrap.css'
 
 function addGoogleTranslateScript() {
@@ -21,7 +22,7 @@ function Header() {
         addGoogleTranslateScript();
         window.googleTranslateElementInit = initializeGoogleTranslate;
       }, []);
-
+const router = useRouter();
   return (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
       <Container>
@@ -31,7 +32,7 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/project-2-team-sar/resources#resources">Resources</Nav.Link>
+            <Nav.Link href="/project-2-team-sar/resources" active={router.pathname === '/project-2-team-sar/resources'}>Resources</Nav.Link>
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#blogs">Blogs</Nav.Link>
             <Nav.Link href="#subscribe">Subscribe</Nav.Link>
