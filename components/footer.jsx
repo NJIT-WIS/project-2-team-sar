@@ -12,14 +12,10 @@ const Footer = () => {
           <Col md={4}>
             <ul className="nav">
               <li className="nav-item">
-                <Link href="/aboutus">
-                  <a className="nav-link active" aria-current="page">About Us</a>
-                </Link>
+                <Link href="/aboutus" className="nav-link active" aria-current="page">About Us</Link>
               </li>
               <li className="list-inline-item">
-                <Link href="/privacy">
-                  <a className="nav-link active" aria-current="page">Privacy Policy</a>
-                </Link>
+                <Link href="/privacy" className="nav-link active" aria-current="page">Privacy Policy</Link>
               </li>
             </ul>
           </Col>
@@ -31,18 +27,19 @@ const Footer = () => {
           </Col>
           <Col md={4}>
             <h5>Contact us:</h5>
-            <p>123 Main Street, New York, NY 10001</p>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <p>254 Main Street, New York, NY 10001</p>
+            <p>Email: myWebClass@example.com</p>
+            <p>Phone: (235) 456-7890</p>
           </Col>
         </Row>
         <Row>
-          <Col className="text-center mt-3 py-2">
-            <p>&copy; {new Date().getFullYear()} Example Company, Inc. All rights reserved.</p>
+          <Col className="text-center mt-3">
+            <p>&copy; {new Date().getFullYear()} myWebClass Company, Inc. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
     </footer>
+
   );
 };
 
