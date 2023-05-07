@@ -12,10 +12,14 @@ const Footer = () => {
           <Col md={4}>
             <ul className="nav">
               <li className="nav-item">
-                <Link href="/aboutus" className="nav-link active" aria-current="page">About Us</Link>
+                <Link href="/aboutus">
+                  <a className="nav-link active" aria-current="page">About Us</a>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link href="/privacy" className="nav-link active" aria-current="page">Privacy Policy</Link>
+                <Link href="/privacy">
+                  <a className="nav-link active" aria-current="page">Privacy Policy</a>
+                </Link>
               </li>
             </ul>
           </Col>
