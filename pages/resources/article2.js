@@ -1,5 +1,5 @@
 import React from 'react';
-import Article2 from '../../components/articles/Article2';
+import Article2 from '../../components/articles/article2';
 import Header from '../../components/header'
 import Footer from '../../components/footer'
 import Head from 'next/head'
