@@ -1,20 +1,18 @@
 import Head from 'next/head'
-import Header from '../components/header';
-import Footer from '../components/footer';
-import About from '../components/about';
+import Header from '../components/header'
+import Footer from '../components/footer'
+import Privacy from '../components/privacy'
 
-export default function Aboutus() {
+export default function PrivacyPolicy() {
     return (
         <>
             <Head>
-                <title>SAR Marketing Group | About us</title>
+                <title>SAR Marketing Group | Privacy Policy</title>
                 <meta name="description" content="Marketing group site created by three college students." />
             </Head>
             <Header/>
-            <About/>
+            <Privacy/>
             <Footer/>
-
-            
         </>
     )
 }
