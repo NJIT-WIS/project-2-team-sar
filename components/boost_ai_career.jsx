@@ -26,7 +26,7 @@ const Services = () => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Customized Training & Support</Card.Title>
+              <Card.Title>Customized AI Training & Support</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>Flexible Delivery Options: Online, on-site, and blended learning formats</ListGroup.Item>
                 <ListGroup.Item>Personalized Learning Plans: Tailored to your needs, goals, and learning style</ListGroup.Item>
