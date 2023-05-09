@@ -42,7 +42,7 @@ const Services = () => {
               <Card.Title>Contact Information</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>Email: support@mywebclass.org</ListGroup.Item>
-                <ListGroup.Item>Phone: (123) 456-7890</ListGroup.Item>
+                <ListGroup.Item>Phone: (235) 456-7890</ListGroup.Item>
                 <ListGroup.Item>Social Media: Facebook, Twitter, LinkedIn</ListGroup.Item>
               </ListGroup>
               <Button variant="primary" className="mt-3">Get in Touch</Button>
