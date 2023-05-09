@@ -39,7 +39,7 @@ const Services = () => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Our Contact Information</Card.Title>
+              <Card.Title>Contact Information</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>Email: support@mywebclass.org</ListGroup.Item>
                 <ListGroup.Item>Phone: (123) 456-7890</ListGroup.Item>
