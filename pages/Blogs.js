@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Blog from '../components/blog_webpage_ai';
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
 
-export default function Blog({ allPostsData }) {
+export default function Blogs({ allPostsData }) {
   return (
     <>
       <Head>
@@ -12,16 +12,7 @@ export default function Blog({ allPostsData }) {
       </Head>
       <Header />
       <main>
-        {allPostsData.map(({ title, excerpt, keyword }) => (
-          <div key={keyword}>
-            <Link href="/blog/[keyword]" as={'/posts/${keyword}`}>
-              <a>
-                <h2>{title}</h2>
-              </a>
-            </Link>
-            <p>{excerpt}</p>
-          </div>
-        ))}
+        <Blog allPostsData={allPostsData} />
       </main>
       <Footer />
     </>
