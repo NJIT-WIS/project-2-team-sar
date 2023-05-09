@@ -16,9 +16,6 @@ const Blog = ({ allPostsData }) => {
             <Card>
               <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
-                <Card.Text>
-                  {post.excerpt}
-                </Card.Text>
                 <Link href={`/posts/${post.keyword}`}>
                   <a>
                     <Button variant="primary">Read More</Button>
