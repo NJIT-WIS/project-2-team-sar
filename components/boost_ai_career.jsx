@@ -13,7 +13,7 @@ const Services = () => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Professional Career Development Opportunities</Card.Title>
+              <Card.Title>Professional Career Development</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>Certification Programs: AI Engineer, Data Scientist, and ML Specialist</ListGroup.Item>
                 <ListGroup.Item>Industry Partnerships: Collaborate now with top AI companies</ListGroup.Item>
