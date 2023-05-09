@@ -28,7 +28,7 @@ const Services = () => {
             <Card.Body>
               <Card.Title>Customized AI Training & Support</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>Flexible Delivery Options to Consider: Online, on-site, and blended learning formats</ListGroup.Item>
+                <ListGroup.Item>Flexible Delivery Options: Online, on-site, and blended learning formats</ListGroup.Item>
                 <ListGroup.Item>Personalized Learning Plans: Tailored to your needs, goals, and learning style</ListGroup.Item>
                 <ListGroup.Item>Comprehensive Support: Dedicated support team and access to a resource library</ListGroup.Item>
               </ListGroup>
