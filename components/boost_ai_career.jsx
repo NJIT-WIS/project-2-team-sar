@@ -6,7 +6,7 @@ const Services = () => {
     <Container>
       <Row className="my-4">
         <Col>
-          <h1>Boost Your AI Career with MyWebClass.org</h1>
+          <h1>Boost Your AI Career Today with MyWebClass.org</h1>
         </Col>
       </Row>
       <Row>
