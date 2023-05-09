@@ -62,7 +62,7 @@ const Blog = () => {
                 <Card.Text>
                   {post.excerpt}
                 </Card.Text>
-                <Link to={`/blog/${index}`}>
+                <Link href={`/blog/${index}`}>
                   <Button variant="primary">Read More</Button>
                 </Link>
               </Card.Body>
