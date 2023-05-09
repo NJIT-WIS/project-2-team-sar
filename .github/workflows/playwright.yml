@@ -29,7 +29,7 @@ jobs:
       - name: Install missing dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libvpx.so.7 libevent-2.1.so.7 libopus.so.0 libwoff2dec.so.1.0.2 libharfbuzz-icu.so.0
+          sudo apt-get install -y libvpx-dev libevent-dev libopus-dev libwoff2dec libharfbuzz-icu libharfbuzz-dev libmanette-dev libflite1 libgles2 libx264-155
 
 
       - name: Create the build
