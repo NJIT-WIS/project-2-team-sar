@@ -1,30 +1,19 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import { postsDirectory } from '../../lib/posts';
+import { getAllKeywords, getPostData } from '../../lib/posts';
+import Link from 'next/link';
 
-export default function Post({ post }) {
-  const router = useRouter();
-
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
-
-  const { title, date, content } = post;
-
+export default function Post({ postData }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{postData.title}</title>
       </Head>
       <Header />
       <main>
-        <h1>{title}</h1>
-        <div>{content}</div>
+        <h1>{postData.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </main>
       <Footer />
     </>
@@ -32,14 +21,10 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const fileNames = fs.readdirSync(postsDirectory);
-  const paths = fileNames.map((fileName) => {
-    const keyword = fileName.replace(/\.md$/, '');
-    return {
-      params: { keyword },
-    };
-  });
-
+  const keywords = getAllKeywords();
+  const paths = keywords.map((keyword) => ({
+    params: { keyword },
+  }));
   return {
     paths,
     fallback: false,
@@ -47,19 +32,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { keyword } = params;
-  const fullPath = path.join(postsDirectory, `${keyword}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
-
+  const postData = await getPostData(params.keyword);
   return {
     props: {
-      post: {
-        keyword,
-        title: data.title,
-        date: data.date,
-        content,
-      },
+      postData,
     },
   };
 }
