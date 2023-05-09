@@ -19,7 +19,7 @@ const Services = () => {
                 <ListGroup.Item>Industry Partnerships: Collaborate now with top AI companies</ListGroup.Item>
                 <ListGroup.Item>Mentorship Programs: Connect with experienced AI professionals</ListGroup.Item>
               </ListGroup>
-              <Button variant="primary" className="mt-3">Learn More</Button>
+              <Button variant="primary" className="mt-3">Learn More Now</Button>
             </Card.Body>
           </Card>
         </Col>
