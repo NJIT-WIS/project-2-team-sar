@@ -1,3 +1,8 @@
+---
+title: 'Embracing the Agile Mindset in Education: A Paradigm Shift'
+keyword: 'Agile'
+---
+
 # April 12, 2023: Embracing the Agile Mindset in Education: A Paradigm Shift
 
 ## Introduction
@@ -37,8 +42,3 @@ Despite its many benefits, adopting the Agile mindset in education is not withou
 ## Conclusion and Future Perspectives
 
 As the world continues to evolve at an unprecedented pace, the education sector must adapt to better prepare students for an uncertain future. Embracing the Agile mindset in education can lead to a paradigm shift, emphasizing adaptability, collaboration, and continuous improvement in teaching and learning practices.
-
----
-title: 'Embracing the Agile Mindset in Education: A Paradigm Shift'
-keyword: 'Agile'
----
