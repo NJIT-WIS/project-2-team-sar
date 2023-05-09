@@ -15,7 +15,7 @@ const Services = () => {
             <Card.Body>
               <Card.Title>Professional Career Development Opportunities</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>Certification Programs for Continued Education: AI Engineer, Data Scientist, and ML Specialist</ListGroup.Item>
+                <ListGroup.Item>Certification Programs: AI Engineer, Data Scientist, and ML Specialist</ListGroup.Item>
                 <ListGroup.Item>Industry Partnerships: Collaborate now with top AI companies for a hands-on experience</ListGroup.Item>
                 <ListGroup.Item>Mentorship Programs: Connect with experienced AI professionals for guidance in the growth of your career</ListGroup.Item>
               </ListGroup>
