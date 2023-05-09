@@ -32,7 +32,7 @@ const Services = () => {
                 <ListGroup.Item>Personalized Learning Plans: Tailored to your needs, goals, and learning style</ListGroup.Item>
                 <ListGroup.Item>Comprehensive Support: Dedicated support team and access to a resource library</ListGroup.Item>
               </ListGroup>
-              <Button variant="primary" className="mt-3">Learn More Now</Button>
+              <Button variant="primary" className="mt-3">Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
