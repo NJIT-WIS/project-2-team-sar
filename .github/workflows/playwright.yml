@@ -29,11 +29,7 @@ jobs:
       - name: Install missing dependencies
         run: |
           sudo apt-get update
-          sudo add-apt-repository universe
-          sudo apt-get update
-          sudo apt-get install libwoff2-1
-          sudo dpkg -i /path/to/package.deb
-          sudo apt-get install -y libvpx-dev libevent-dev libopus-dev libwoff2-1 libharfbuzz-dev libhyphen-dev libx264-dev
+          sudo apt-get install -y libvpx.so.7 libevent-2.1.so.7 libopus.so.0 libwoff2dec.so.1.0.2 libharfbuzz-icu.so.0
 
 
       - name: Create the build
