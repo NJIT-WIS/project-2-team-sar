@@ -14,7 +14,7 @@ export default function Blog({ allPostsData }) {
       <main>
         {allPostsData.map(({ title, excerpt, keyword }) => (
           <div key={keyword}>
-            <Link href={/posts/${keyword}.md}>
+            <Link href={`/blog/${keyword}`}>
               <a>
                 <h2>{title}</h2>
               </a>
