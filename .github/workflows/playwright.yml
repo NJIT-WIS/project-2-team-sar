@@ -26,12 +26,6 @@ jobs:
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on 
           npm install next@latest
 
-      - name: Install missing dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libvpx-dev libevent-dev libopus-dev libwoff2dec libharfbuzz-icu libharfbuzz-dev libmanette-dev libflite1 libgles2 libx264-155
-
-
       - name: Create the build
         run: npx next build
 
