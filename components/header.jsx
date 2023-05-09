@@ -30,7 +30,7 @@ function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#resources">Resources</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="/project-2-team-sar/Services">Services</Nav.Link>
             <Nav.Link href="#blogs">Blogs</Nav.Link>
             <Nav.Link href="#subscribe">Subscribe</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
