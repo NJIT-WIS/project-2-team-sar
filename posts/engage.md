@@ -3,6 +3,8 @@ title: 'Project-Based Learning: Engaging Students in Real-World Problem Solving'
 date: 2023-03-18
 ---
 
+March 3, 2023
+
 ## Introduction
 
 Project-based learning (PBL) is an educational approach that engages students in real-world problem-solving, encouraging them to apply their knowledge and skills to address complex, relevant issues. By promoting collaboration, critical thinking, and creativity, PBL helps students develop essential skills for success in the 21st century. This article explores the benefits of PBL and offers strategies for implementing it in the classroom.
