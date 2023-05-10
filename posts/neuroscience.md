@@ -1,6 +1,6 @@
 ---
 title: 'The Role of Neuroscience in Shaping Modern Education Practices'
-keyword: 'Neuroscience'
+date: 2023-03-03
 ---
 
 # March 3, 2023: The Role of Neuroscience in Shaping Modern Education Practices
