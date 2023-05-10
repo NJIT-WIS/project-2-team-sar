@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import Link from 'next/link';
 
 export default function Post({ postData }) {
   return (
@@ -21,12 +20,10 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds().map((id) => ({
-    params: { id: id.toString() },
-  }));
+  const paths = getAllPostIds().map((id) => ({ params: { id } }));
   return {
     paths,
-    fallback: false,
+    fallback: false
   };
 }
 
@@ -34,7 +31,7 @@ export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   return {
     props: {
-      postData,
-    },
+      postData
+    }
   };
 }
