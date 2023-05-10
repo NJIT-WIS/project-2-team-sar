@@ -3,6 +3,8 @@ title: 'Lean Principles in the Classroom: Maximizing Efficiency and Learning Out
 date: 2023-08-16
 ---
 
+August 16, 2023
+
 ## Introduction
 
 Lean principles, originating from the manufacturing industry, focus on reducing waste and optimizing processes to enhance productivity and efficiency. These principles can be applied to various sectors, including education. This article explores how Lean principles can be applied in the classroom to maximize efficiency, enhance learning outcomes, and create a more effective learning environment.
