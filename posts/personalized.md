@@ -1,6 +1,6 @@
 ---
 title: 'Personalized Learning Plans: Empowering Students through Adaptive Education'
-keyword: 'Personalized'
+date: 2023-04-10
 ---
 
 # April 10, 2023: Personalized Learning Plans: Empowering Students through Adaptive Education
