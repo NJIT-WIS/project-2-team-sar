@@ -8,11 +8,9 @@ export default function Blogs({ allPostsData }) {
   return (
     <>
       <Head>
-         <title>SAR Marketing Group</title>
-         <meta name="description" content="Marketing group site created by three college students." />
+        <title>Blog</title>
       </Head>
       <Header />
-      <Services />
       <main>
         <Blog allPostsData={allPostsData} />
       </main>
