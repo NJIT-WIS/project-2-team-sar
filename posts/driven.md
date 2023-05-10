@@ -3,7 +3,7 @@ title: 'Preparing Students for the AI-Driven World: Essential Skills for Success
 date: 2023-02-22
 ---
 
-February 2, 2023
+February 22, 2023
 
 ## Introduction
 
