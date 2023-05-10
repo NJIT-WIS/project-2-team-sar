@@ -3,7 +3,7 @@ title: 'Lean Principles in the Classroom: Maximizing Efficiency and Learning Out
 date: 2023-08-16
 ---
 
-# August 16, 2023: Lean Principles in the Classroom: Maximizing Efficiency and Learning Outcomes
+# Lean Principles in the Classroom: Maximizing Efficiency and Learning Outcomes
 
 ## Introduction
 
