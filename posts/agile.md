@@ -3,7 +3,7 @@ title: 'Embracing the Agile Mindset in Education: A Paradigm Shift'
 date: 2023-04-12
 ---
 
-## Introduction
+## April 12, 2023: Introduction
 
 Agile methodologies have revolutionized the software development industry by promoting adaptability, collaboration, and continuous improvement. As the world rapidly changes, the education sector must also evolve to better prepare students for an uncertain future. This article will discuss how embracing the Agile mindset can lead to a paradigm shift in education, emphasizing adaptability and continuous improvement in teaching and learning practices.
 
