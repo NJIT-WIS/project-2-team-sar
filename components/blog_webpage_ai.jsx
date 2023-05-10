@@ -15,7 +15,6 @@ const Blog = ({ allPostsData }) => {
           <Col md={6} key={index} className="mb-4">
             <Card>
               <Card.Body>
-                <Card.Title>{post.title}</Card.Title>
                 <Link href={`/posts/${post.id}`}>
                   <Button variant="primary" role="link">Read More</Button>
                 </Link>
