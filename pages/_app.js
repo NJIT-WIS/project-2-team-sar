@@ -1,5 +1,7 @@
 import '../styles/globals.css'
+import Modal from '../components/modal'
 import script from 'next/script'
+
 
 function App({ Component, pageProps }) {
   return (  
@@ -18,6 +20,8 @@ function App({ Component, pageProps }) {
           }}
           />     
         <Component {...pageProps} />
+        <Modal/ >
+
       
       </>
   )
