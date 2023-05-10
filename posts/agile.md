@@ -3,7 +3,7 @@ title: 'Embracing the Agile Mindset in Education: A Paradigm Shift'
 date: 2023-04-12
 ---
 
-# Embracing the Agile Mindset in Education: A Paradigm Shift
+# April 12, 2023: Embracing the Agile Mindset in Education: A Paradigm Shift
 
 ## Introduction
 
