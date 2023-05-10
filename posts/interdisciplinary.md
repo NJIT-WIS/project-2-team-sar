@@ -1,6 +1,6 @@
 ---
 title: 'The Importance of Interdisciplinary Learning in the 21st Century'
-keyword: 'Interdisciplinary'
+date: 2023-04-03
 ---
 
 # April 3, 2023: The Importance of Interdisciplinary Learning in the 21st Century
