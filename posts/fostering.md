@@ -3,6 +3,8 @@ title: 'Fostering a Culture of Continuous Improvement in Education'
 date: 2023-03-28
 ---
 
+March 28, 2023
+
 ## Introduction
 
 In today's rapidly changing world, continuous improvement is key to driving innovation and enhancing educational outcomes. Schools must constantly adapt to the evolving needs of students and society to ensure they provide the best possible education. This article shares strategies for fostering a culture of continuous improvement in education, including setting clear goals, collecting feedback, and encouraging collaboration among educators, students, and other stakeholders.
