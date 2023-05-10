@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import { getAllKeywords, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from '../../lib/posts';
 import Link from 'next/link';
 
 export default function Post({ postData }) {
@@ -21,9 +21,9 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const keywords = getAllKeywords();
-  const paths = keywords.map((keyword) => ({
-    params: { keyword },
+  const ids = getAllPostIds();
+  const paths = ids.map((id) => ({
+    params: { id },
   }));
   return {
     paths,
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.keyword);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
