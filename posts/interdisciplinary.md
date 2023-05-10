@@ -3,6 +3,8 @@ title: 'The Importance of Interdisciplinary Learning in the 21st Century'
 date: 2023-04-03
 ---
 
+April 3, 2023
+
 ## Introduction
 
 Interdisciplinary learning is an approach that integrates multiple disciplines to provide students with a more comprehensive understanding of complex, real-world problems. By breaking down the barriers between subjects, interdisciplinary learning fosters creativity, innovation, and critical thinking, preparing students for the diverse challenges of the 21st century. This article explores the importance of interdisciplinary learning and offers strategies for implementing it in the classroom.
