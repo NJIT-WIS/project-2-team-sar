@@ -3,7 +3,7 @@ title: 'Fostering a Culture of Continuous Improvement in Education'
 date: 2023-03-28
 ---
 
-# March 28, 2023: Fostering a Culture of Continuous Improvement in Education
+# Fostering a Culture of Continuous Improvement in Education
 
 ## Introduction
 
