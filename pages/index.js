@@ -4,6 +4,8 @@ import Footer from '../components/footer';
 import Card_1 from '../components/card_1';
 import Card_2 from '../components/card_2';
 import Card_3 from '../components/card_3';
+import { useEffect, useState } from 'react';
+import { Modal } from 'react-bootstrap';
 
 export default function Home() {
   return (
