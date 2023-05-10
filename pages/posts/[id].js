@@ -21,9 +21,8 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const ids = getAllPostIds();
-  const paths = ids.map((id) => ({
-    params: { id },
+  const paths = getAllPostIds().map((id) => ({
+    params: { id: id.toString() },
   }));
   return {
     paths,
