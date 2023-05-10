@@ -3,7 +3,7 @@ title: 'The Power of Collaboration: Building a Network of Innovative Educators'
 date: 2023-03-23
 ---
 
-# The Power of Collaboration: Building a Network of Innovative Educators
+March 3, 2023
 
 ## Introduction
 
