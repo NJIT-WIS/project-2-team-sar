@@ -38,7 +38,6 @@ const Footer = () => {
         <p className="text-light">&copy; {new Date().getFullYear()} MYWEBCLASS Company, Inc. All rights reserved.</p>
   </Container>
 </footer>
-
   );
 };
 
