@@ -10,9 +10,18 @@ const Footer = () => {
   <Container className="border-bottom border-gray text-muted">
     <Row className="mx-auto" >
       <Col md={4}>
-        <ul className="nav">
+        <ul className="nav col-6">
           <li className="nav-item">
             <Link href="/aboutus" className="nav-link active text-muted text-decoration-underline" aria-current="page">About Us</Link>
+          </li>
+          <li className="list-inline-item">
+            <Link href="../Services" className="nav-link active text-muted text-decoration-underline" aria-current="page">Services</Link>
+          </li>
+          <li className="list-inline-item">
+            <Link href="../resources" className="nav-link active text-muted text-decoration-underline" aria-current="page">Resources</Link>
+          </li>
+          <li className="list-inline-item">
+            <Link href="../blogs" className="nav-link active text-muted text-decoration-underline" aria-current="page">Blogs</Link>
           </li>
           <li className="list-inline-item">
             <Link href="/privacy" className="nav-link active text-muted text-decoration-underline" aria-current="page">Privacy Policy</Link>
@@ -28,7 +37,7 @@ const Footer = () => {
       <Col md={4}>
         <h5 className="text-muted">Contact us:</h5>
         <p className="text-muted">254 Main Street, New York, NY 10001</p>
-        <p className="text-muted">Email: myWebClass@example.com</p>
+        <p className="text-muted">Email: support@mywebclass.org</p>
         <p className="text-muted">Phone: (235) 456-7890</p>
       </Col>
     </Row>
@@ -38,7 +47,6 @@ const Footer = () => {
         <p className="text-light">&copy; {new Date().getFullYear()} MYWEBCLASS Company, Inc. All rights reserved.</p>
   </Container>
 </footer>
-
   );
 };
 
