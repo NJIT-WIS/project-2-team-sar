@@ -71,6 +71,9 @@ export default function CookieConsentModal() {
           width: 100%;
           margin-top: 20px;
         }
+        .modal-buttons button:hover {
+          background-color: navy;
+        }
       `}</style>
     </>
   );
