@@ -45,7 +45,7 @@ const Services = () => {
                 <ListGroup.Item>Phone: (235) 456-7890</ListGroup.Item>
                 <ListGroup.Item>Social Media: Facebook, Twitter, LinkedIn</ListGroup.Item>
               </ListGroup>
-              <Button variant="primary" className="mt-3">Get in Touch</Button>
+              <Button variant="primary" className="mt-3" href="/project-2-team-sar/subscribe">Get in Touch</Button>
             </Card.Body>
           </Card>
         </Col>

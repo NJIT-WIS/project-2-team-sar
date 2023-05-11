@@ -5,7 +5,7 @@ const Privacy = () => {
     return ( 
 
         <Container className="my-5">
-            <Row class="col-lg-10 mx-auto lead">
+            <Row class="col-lg-10 mx-auto">
                 <h1 className="text-left mb-4">Privacy Policy</h1>
                 <p className="mt-2">Date Updated: April 22, 2023</p>
                 <hr></hr>
