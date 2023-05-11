@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #0070f3;
+  --secondary-color: #6a737d;
+  --background-color: #f8f8f8;
+}
+html,
+body {
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #004ebc;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #004ebc;
+}
+
+.navbar {
+  background-color: var(--background-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.icon-spacing {
+  margin-right: 5px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-buttons button:hover {
+  background-color: #f2f2f2;
+}

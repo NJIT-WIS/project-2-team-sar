@@ -2,17 +2,29 @@ name: Daily Backup
 
 on:
   schedule:
-    - cron: '41 * * * *' # Runs at 12:00am UTC every day
+    - cron: '0 */12 * * *' # Backup every 12 hours
 
 jobs:
   backup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Sprint2 branch
         uses: actions/checkout@v2
-      - name: Backup repository
+        with:
+          ref: Sprint2
+
+      - name: checkout backup branch
         run: |
-          git clone https://github.com/NJIT-WIS/project-2-team-sar.git backup
-          cd backup
-          git remote add backup https://github.com/ap2684/backup-project-2-team-sar.git
-          git push --mirror backup
+          git fetch origin
+          git branch -r
+          git checkout -b backup origin/backup
+
+      - name: fetch and merge Sprint2 branch to backup branch
+        run: |
+          git config --global user.email "ap2684@njit.edu"
+          git config --global user.name "ap2684"
+          git fetch origin Sprint2
+          git merge -X theirs origin/Sprint2 --allow-unrelated-histories
+
+      - name: push backup
+        run: git push origin backup --force-with-lease
