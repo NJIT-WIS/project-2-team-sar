@@ -7,7 +7,7 @@ const About = () => {
             
             <h1 className="text-center pt-3 mb-2">MyWebClass.org</h1>
             <h3 className="text-center mb-3"> Pioneering the Future of Education</h3>
-            <div className="text-left lead">
+            <div className="text-left">
                 <p>Dear friends, colleagues, and fellow educators, we invite you to join us on an essential journey – the transformation of education for the AI-driven world. As we navigate the challenges and opportunities of the Fourth Industrial Revolution, it is crucial to reimagine our educational practices and adopt a new paradigm that empowers our students with the knowledge and skills they need to flourish in an increasingly complex and interconnected world. </p>
                 <p>The existing factory school model, a legacy of the Industrial Revolution, is no longer adequate for preparing students for the demands and opportunities presented by AI and other emerging technologies. According to the World Economic Forum, 65% of children entering primary school today will work in jobs that don't exist yet. We must shift our focus towards nurturing creativity, adaptability, and collaboration – essential skills for success in the AI-driven world.</p>
                 <p>MyWebClass.org, a foundation committed to revolutionizing education by incorporating Agile and Lean principles into the classroom, is at the forefront of this transformation. Our mission encompasses conducting research on effective strategies, developing resources and tools, offering professional development opportunities, and collaborating with schools and educators to foster a culture of continuous improvement, collaboration, and adaptability.</p>
