@@ -19,7 +19,7 @@ const Services = () => {
                 <ListGroup.Item>Industry Partnerships: Collaborate now with top AI companies</ListGroup.Item>
                 <ListGroup.Item>Mentorship Programs: Connect with experienced AI professionals</ListGroup.Item>
               </ListGroup>
-              <Button variant="primary" className="mt-3">Learn More</Button>
+              <Button variant="primary" className="mt-3" href="/project-2-team-sar/subscribe">Subscribe to Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -32,7 +32,7 @@ const Services = () => {
                 <ListGroup.Item>Personalized Learning Plans: Tailored to your needs, goals, and learning style</ListGroup.Item>
                 <ListGroup.Item>Comprehensive Support: Dedicated support team and access to a resource library</ListGroup.Item>
               </ListGroup>
-              <Button variant="primary" className="mt-3">Learn More</Button>
+              <Button variant="primary" className="mt-3" href="/project-2-team-sar/subscribe">Subscribe to Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
