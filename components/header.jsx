@@ -34,7 +34,7 @@ const router = useRouter();
           <Nav className="ms-auto">
             <Nav.Link href="/project-2-team-sar/resources" active={router.pathname === '/project-2-team-sar/resources'}>Resources</Nav.Link>
             <Nav.Link href="/project-2-team-sar/Services">Services</Nav.Link>
-            <Nav.Link href="/projects-2-team-sar/blogs">Blogs</Nav.Link>
+            <Nav.Link href="/project-2-team-sar/blogs">Blogs</Nav.Link>
             <Nav.Link href="/project-2-team-sar/subscribe">Subscribe</Nav.Link>
             <Nav.Link style={{ marginLeft: "30px" }}>
               <div id="google-translate"></div>
